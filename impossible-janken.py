@@ -14,9 +14,12 @@ while True:
     I = input("\nあなたの手は？")
     #自分の手の設定
     hands = ["グー", "チョキ", "パー"]
-    if I == "勝たせて":
+    if I == "私は負け犬です。本当は勝ちたいけれど実力がないので、どうか一回だけ勝たせてください。お願いします。":
         mode = 1
-        slow_print("……仕方がないですねぇ。")
+        slow_print("……そこまでいうのでしたら、仕方がない。")
+        continue
+    elif I == "勝たせてください。":
+        slow_print("おや、それだけですか？")
         continue
     if I not in hands:
         slow_print("……おや、手が震えて正しく入力できていませんよ？")
